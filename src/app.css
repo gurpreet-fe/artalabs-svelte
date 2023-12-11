@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+	.vertical-lr {
+		writing-mode: vertical-lr;
+	}
+}
