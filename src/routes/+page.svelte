@@ -229,7 +229,7 @@
 			</div>
 		</section>
 		<aside class="ml-auto grid min-w-7 place-content-center border-l">
-			<a href="www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /></a>
+			<a href="https://www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /></a>
 		</aside>
 	</div>
 
@@ -531,7 +531,7 @@
 							</div>
 						</div>
 						<div class="flex justify-between pr-6">
-							<div><a href="www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /> @artalabs</a></div>
+							<div><a href="https://www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /> @artalabs</a></div>
 							<div class="relative flex gap-x-5">
 								<div class="carousel-button-prev hover:cursor-pointer">
 									<i class="fa-solid fa-arrow-left" />
