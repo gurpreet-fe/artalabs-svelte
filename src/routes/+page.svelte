@@ -274,7 +274,7 @@
 <div class="hidden h-screen md:block">
 	<div class="flex h-full flex-col">
 		<div class="relative">
-			<div class="border-y">
+			<div class="border-b">
 				<div class="">
 					<div class="flex justify-end">
 						<!-- <label class="relative inline-flex cursor-pointer items-center">
