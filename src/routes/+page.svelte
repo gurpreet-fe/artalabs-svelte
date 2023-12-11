@@ -3,7 +3,6 @@
 	import Swiper from 'swiper';
 	import { Navigation } from 'swiper/modules';
 	import 'swiper/css';
-	import Carousel from '$lib/Carousel.svelte';
 
 	let aboutSection: HTMLElement;
 	let servicesSection: HTMLElement;
