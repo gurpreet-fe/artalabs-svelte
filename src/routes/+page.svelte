@@ -197,7 +197,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="hidden  h-64 bg-black px-3 py-10" bind:this={templatesSection}>
+			<section class="hidden h-64 bg-black px-3 py-10" bind:this={templatesSection}>
 				<div class="flex h-full flex-col justify-between text-center text-white">
 					<p class="mb-4 font-bold">Coming Soon!</p>
 					<p class="mb-4">Templates are currently being prepared in our lab 🧪</p>
@@ -229,13 +229,16 @@
 			</div>
 		</section>
 		<aside class="ml-auto grid min-w-7 place-content-center border-l">
-			<i class="fa-brands fa-instagram" />
+			<a href="www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /></a>
 		</aside>
 	</div>
 
 	<div class="flex">
 		<div class="flex-grow bg-black p-3 text-white">
-			<form action="" class="flex flex-col gap-5">
+			<form
+				action="mailto:contact.artalabs@gmail.com"
+				method="post"
+				class="flex flex-col gap-5">
 				<div class="flex flex-col gap-1">
 					<label for=""> Name </label>
 					<input type="text" class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm" required />
@@ -266,7 +269,7 @@
 			</form>
 		</div>
 		<aside class="ml-auto grid min-w-7 place-content-center border-l">
-			<div class="vertical-lr flex rotate-180 items-center gap-2">contact.artalabs@gmail.com</div>
+			<div class="vertical-lr flex rotate-180 items-center gap-2"><a href="mailto:contact.artalabs@gmail.com">contact.artalabs@gmail.com</a></div>
 		</aside>
 	</div>
 </div>
@@ -404,7 +407,10 @@
 				<div class="container mx-auto">
 					<h2 class="text-6xl">Contact</h2>
 					<div class="mt-6">
-						<form action="" class="flex gap-x-10">
+						<form
+							action="mailto:contact.artalabs@gmail.com"
+							method="post"
+							class="flex gap-x-10">
 							<div class="flex-1">
 								<div>Get in touch for a free quote!</div>
 								<br />
@@ -525,7 +531,7 @@
 							</div>
 						</div>
 						<div class="flex justify-between pr-6">
-							<div><i class="fa-brands fa-instagram" /> @artalabs</div>
+							<div><a href="www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /> @artalabs</a></div>
 							<div class="relative flex gap-x-5">
 								<div class="carousel-button-prev hover:cursor-pointer">
 									<i class="fa-solid fa-arrow-left" />
