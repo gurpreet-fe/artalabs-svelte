@@ -229,34 +229,47 @@
 			</div>
 		</section>
 		<aside class="ml-auto grid min-w-7 place-content-center border-l">
-			<a href="https://www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /></a>
+			<a href="https://www.instagram.com/artalabs" target="_blank"
+				><i class="fa-brands fa-instagram" /></a>
 		</aside>
 	</div>
 
 	<div class="flex">
 		<div class="flex-grow bg-black p-3 text-white">
-			<form
-				action="mailto:contact.artalabs@gmail.com"
-				method="post"
-				class="flex flex-col gap-5">
+			<form method="post" class="flex flex-col gap-5" data-netlify="true">
 				<div class="flex flex-col gap-1">
-					<label for=""> Name </label>
-					<input type="text" class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm" required />
+					<label for="name"> Name </label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
+						required />
 				</div>
 
 				<div class="flex flex-col gap-1">
-					<label for=""> E-Mail </label>
-					<input type="text" class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm" required />
+					<label for="email"> E-Mail </label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
+						required />
 				</div>
 				<div class="flex flex-col gap-1">
-					<label for=""> Reason/Service </label>
-					<input type="text" class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm" required />
+					<label for="reason"> Reason/Service </label>
+					<input
+						type="text"
+						name="reason"
+						id="reason"
+						class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
+						required />
 				</div>
 				<div class="flex flex-col gap-1">
-					<label for=""> Tell us about what you need (scope, timeline, budget): </label>
+					<label for="description"> Tell us about what you need (scope, timeline, budget): </label>
 					<textarea
-						name=""
-						id=""
+						name="description"
+						id="description"
 						cols="30"
 						rows="10"
 						class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
@@ -269,7 +282,9 @@
 			</form>
 		</div>
 		<aside class="ml-auto grid min-w-7 place-content-center border-l">
-			<div class="vertical-lr flex rotate-180 items-center gap-2"><a href="mailto:contact.artalabs@gmail.com">contact.artalabs@gmail.com</a></div>
+			<div class="vertical-lr flex rotate-180 items-center gap-2">
+				<a href="mailto:contact.artalabs@gmail.com">contact.artalabs@gmail.com</a>
+			</div>
 		</aside>
 	</div>
 </div>
@@ -407,10 +422,7 @@
 				<div class="container mx-auto">
 					<h2 class="text-6xl">Contact</h2>
 					<div class="mt-6">
-						<form
-							action="mailto:contact.artalabs@gmail.com"
-							method="post"
-							class="flex gap-x-10">
+						<form method="post" class="flex gap-x-10" data-netlify="true">
 							<div class="flex-1">
 								<div>Get in touch for a free quote!</div>
 								<br />
@@ -422,23 +434,29 @@
 
 							<div class="flex-1">
 								<div class="mb-5 flex flex-col gap-1">
-									<label for=""> Name </label>
+									<label for="name2"> Name </label>
 									<input
 										type="text"
+										name="name"
+										id="name2"
 										class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
 										required />
 								</div>
 								<div class="mb-5 flex flex-col gap-1">
-									<label for=""> E-Mail </label>
+									<label for="email2"> E-Mail </label>
 									<input
 										type="text"
+										name="email"
+										id="email2"
 										class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
 										required />
 								</div>
 								<div class="mb-5 flex flex-col gap-1">
-									<label for=""> Reason / Service </label>
+									<label for="reason2"> Reason / Service </label>
 									<input
 										type="text"
+										name="reason"
+										id="reason2"
 										class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
 										required />
 								</div>
@@ -446,12 +464,12 @@
 
 							<div class="flex-1">
 								<div class="flex flex-col">
-									<label for="" class="mb-1">
+									<label for="description2" class="mb-1">
 										Tell us about what you need (scope, timeline, budget):
 									</label>
 									<textarea
-										name=""
-										id=""
+										name="description"
+										id="description2"
 										cols="30"
 										rows="10"
 										class="w-full rounded-lg bg-neutral-900 p-2.5 text-sm"
@@ -531,7 +549,10 @@
 							</div>
 						</div>
 						<div class="flex justify-between pr-6">
-							<div><a href="https://www.instagram.com/artalabs" target="_blank"><i class="fa-brands fa-instagram" /> @artalabs</a></div>
+							<div>
+								<a href="https://www.instagram.com/artalabs" target="_blank"
+									><i class="fa-brands fa-instagram" /> @artalabs</a>
+							</div>
 							<div class="relative flex gap-x-5">
 								<div class="carousel-button-prev hover:cursor-pointer">
 									<i class="fa-solid fa-arrow-left" />
