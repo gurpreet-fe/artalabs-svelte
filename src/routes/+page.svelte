@@ -236,7 +236,7 @@
 
 	<div class="flex">
 		<div class="flex-grow bg-black p-3 text-white">
-			<form method="post" class="flex flex-col gap-5" data-netlify="true">
+			<form name="contact" method="post" class="flex flex-col gap-5" data-netlify="true">
 				<div class="flex flex-col gap-1">
 					<label for="name"> Name </label>
 					<input
@@ -422,7 +422,7 @@
 				<div class="container mx-auto">
 					<h2 class="text-6xl">Contact</h2>
 					<div class="mt-6">
-						<form method="post" class="flex gap-x-10" data-netlify="true">
+						<form name="contact" method="post" class="flex gap-x-10" data-netlify="true">
 							<div class="flex-1">
 								<div>Get in touch for a free quote!</div>
 								<br />
