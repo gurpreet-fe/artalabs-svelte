@@ -3,6 +3,7 @@
 	import Swiper from 'swiper';
 	import { Navigation } from 'swiper/modules';
 	import 'swiper/css';
+	import emailjs from '@emailjs/browser';
 
 	let aboutSection: HTMLElement;
 	let servicesSection: HTMLElement;
@@ -78,6 +79,24 @@
 			templatesSection.classList.toggle('hidden');
 		});
 	});
+
+	function sendEmail(ev) {
+		emailjs
+			.sendForm(
+				import.meta.env.VITE_EMAIL_SERVICE_ID,
+				import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+				ev.target,
+				import.meta.env.VITE_EMAIL_PUBLIC_KEY
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	}
 </script>
 
 <div class="md:hidden">
@@ -236,7 +255,7 @@
 
 	<div class="flex">
 		<div class="flex-grow bg-black p-3 text-white">
-			<form name="contact" method="post" class="flex flex-col gap-5" data-netlify="true">
+			<form on:submit|preventDefault={sendEmail} class="flex flex-col gap-5">
 				<div class="flex flex-col gap-1">
 					<label for="name"> Name </label>
 					<input
@@ -422,7 +441,7 @@
 				<div class="container mx-auto">
 					<h2 class="text-6xl">Contact</h2>
 					<div class="mt-6">
-						<form name="contact" method="post" class="flex gap-x-10" data-netlify="true">
+						<form on:submit|preventDefault={sendEmail} class="flex gap-x-10">
 							<div class="flex-1">
 								<div>Get in touch for a free quote!</div>
 								<br />
